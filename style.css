@@ -97,3 +97,29 @@ footer {
   text-align: center;
   padding: 20px;
 }
+/* PROJECT SCROLL FIX */
+.project-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.project-scroll {
+  display: flex;
+  flex-wrap: nowrap;          /* MUST */
+  overflow-x: scroll;         /* MUST */
+  overflow-y: hidden;
+  gap: 20px;
+  padding: 20px;
+  width: 100%;
+  scroll-behavior: smooth;
+  border: 2px solid #ddd;     /* just for testing */
+}
+
+.project-scroll img {
+  width: 320px;
+  height: 200px;
+  flex-shrink: 0;             /* MUST */
+  border-radius: 12px;
+  object-fit: cover;
+}
+
