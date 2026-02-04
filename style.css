@@ -123,3 +123,41 @@ footer {
   text-align: center;
   padding: 20px;
 }
+/* AUTO PROJECT SLIDER */
+.project-slider {
+  overflow: hidden;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.project-track {
+  display: flex;
+  width: max-content;
+  animation: autoScroll 20s linear infinite;
+}
+
+.project-track img {
+  width: 320px;
+  height: 210px;
+  margin-right: 20px;
+  border-radius: 15px;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  flex-shrink: 0;
+}
+
+/* Animation */
+@keyframes autoScroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Pause on Hover (Optional) */
+.project-slider:hover .project-track {
+  animation-play-state: paused;
+}
+
