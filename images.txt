@@ -1,0 +1,6 @@
+| File Name    | Purpose               |
+| ------------ | --------------------- |
+| banner.jpg   | Main background image |
+| project1.jpg | Project photo         |
+| project2.jpg | Project photo         |
+| project3.jpg | Project photo         |
